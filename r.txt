@@ -1,0 +1,261 @@
+activerecord-mysql,Level 5,Model Object Creation: 1600 objects,0.990000,0.100000,1.090000,1.726206,6796,No Transaction
+activerecord-mysql,Level 5,Model Object Creation: 1600 objects,0.770000,0.050000,0.820000,0.942817,1632,Transaction
+activerecord-mysql,Level 5,Model Object Select: 3200 objects 32 times,1.400000,0.050000,1.450000,1.784212,2672,No Transaction
+activerecord-mysql,Level 5,Model Object Select: 3200 objects 32 times,1.290000,0.050000,1.350000,1.689446,1852,Transaction
+activerecord-mysql,Level 5,Model Object Select PK: 320 objects 32 times,1.590000,0.200000,1.800000,2.529340,1048,No Transaction
+activerecord-mysql,Level 5,Model Object Select PK: 320 objects 32 times,1.620000,0.200000,1.820000,2.554623,280,Transaction
+activerecord-mysql,Level 5,Model Object Select Hash: 320 objects 32 times,1.550000,0.190000,1.750000,2.429281,0,No Transaction
+activerecord-mysql,Level 5,Model Object Select Hash: 320 objects 32 times,1.620000,0.190000,1.810000,2.528207,0,Transaction
+activerecord-mysql,Level 5,Model Object Select Hash Deep: 320 objects 32 times,2.690000,0.210000,2.920000,3.766205,12,No Transaction
+activerecord-mysql,Level 5,Model Object Select Hash Deep: 320 objects 32 times,2.730000,0.210000,2.940000,3.805291,0,Transaction
+activerecord-mysql,Level 5,Model Object Update Hash Deep: 320 objects 32 times,2.270000,0.190000,2.460000,3.459561,0,No Transaction
+activerecord-mysql,Level 5,Model Object Update Hash Deep: 320 objects 32 times,2.230000,0.190000,2.420000,3.261778,0,Transaction
+activerecord-mysql,Level 5,Model Object Update Hash Full: 320 objects 32 times,14.090000,0.850000,14.950000,20.854847,192,No Transaction
+activerecord-mysql,Level 5,Model Object Update Hash Full: 320 objects 32 times,12.960000,0.470000,13.440000,15.834512,124,Transaction
+activerecord-mysql,Level 5,Model Object Select and Save: 1600 objects,1.350000,0.120000,1.470000,2.176434,4392,No Transaction
+activerecord-mysql,Level 5,Model Object Select and Save: 1600 objects,1.130000,0.060000,1.200000,1.406454,64,Transaction
+activerecord-mysql,Level 5,Model Object Destruction: 3200 objects,1.400000,0.190000,1.590000,2.777672,0,No Transaction
+activerecord-mysql,Level 5,Model Object Destruction: 3200 objects,0.890000,0.070000,0.970000,1.191994,0,Transaction
+activerecord-mysql,Level 5,Model Object And Associated Object Creation: 640 objects,0.910000,0.090000,1.010000,1.415905,0,No Transaction
+activerecord-mysql,Level 5,Model Object And Associated Object Creation: 640 objects,0.780000,0.040000,0.820000,0.942093,0,Transaction
+activerecord-mysql,Level 5,Model Object and Associated Object Destruction: 800 objects,1.520000,0.140000,1.660000,2.486581,132,No Transaction
+activerecord-mysql,Level 5,Model Object and Associated Object Destruction: 800 objects,1.260000,0.060000,1.340000,1.719304,8,Transaction
+activerecord-mysql,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,5.800000,0.070000,5.870000,5.921149,2192,No Transaction
+activerecord-mysql,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,5.890000,0.070000,5.960000,6.012105,344,Transaction
+activerecord-mysql,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,6.010000,0.070000,6.090000,6.124076,1256,No Transaction
+activerecord-mysql,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,5.960000,0.060000,6.030000,6.086840,0,Transaction
+activerecord-mysql,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,1.030000,0.030000,1.060000,1.087165,24,No Transaction
+activerecord-mysql,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,1.020000,0.030000,1.060000,1.085952,0,Transaction
+activerecord-mysql,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,1.290000,0.030000,1.320000,1.364803,4108,No Transaction
+activerecord-mysql,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,1.310000,0.030000,1.350000,1.378595,12,Transaction
+activerecord-mysql,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.780000,0.030000,0.820000,0.848494,24,No Transaction
+activerecord-mysql,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.780000,0.020000,0.800000,0.835610,0,Transaction
+activerecord-mysql,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.550000,0.040000,0.600000,0.862394,22592,No Transaction
+activerecord-mysql,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.580000,0.050000,0.630000,0.898574,9760,Transaction
+activerecord-mysql,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.560000,0.030000,0.600000,0.827227,0,No Transaction
+activerecord-mysql,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.530000,0.030000,0.560000,0.782228,0,Transaction
+activerecord-mysql,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.900000,0.040000,0.950000,1.222054,0,No Transaction
+activerecord-mysql,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.830000,0.030000,0.860000,1.114675,0,Transaction
+activerecord-mysql,Level 5,Light Threading with 6 threads,0.480000,0.060000,0.560000,0.807636,28,No Transaction
+activerecord-mysql,Level 5,Heavy Threading with 32 threads,2.380000,0.230000,2.610000,4.094384,40,No Transaction
+activerecord-postgresql,Level 5,Model Object Creation: 1600 objects,0.980000,0.110000,1.090000,1.819698,3452,No Transaction
+activerecord-postgresql,Level 5,Model Object Creation: 1600 objects,0.800000,0.050000,0.850000,1.022404,1792,Transaction
+activerecord-postgresql,Level 5,Model Object Select: 3200 objects 32 times,1.280000,0.030000,1.310000,1.343524,3952,No Transaction
+activerecord-postgresql,Level 5,Model Object Select: 3200 objects 32 times,1.290000,0.020000,1.330000,1.354729,356,Transaction
+activerecord-postgresql,Level 5,Model Object Select PK: 320 objects 32 times,1.440000,0.170000,1.610000,2.031882,0,No Transaction
+activerecord-postgresql,Level 5,Model Object Select PK: 320 objects 32 times,1.450000,0.170000,1.630000,2.014475,0,Transaction
+activerecord-postgresql,Level 5,Model Object Select Hash: 320 objects 32 times,1.510000,0.170000,1.680000,2.137352,0,No Transaction
+activerecord-postgresql,Level 5,Model Object Select Hash: 320 objects 32 times,1.500000,0.170000,1.680000,2.082378,0,Transaction
+activerecord-postgresql,Level 5,Model Object Select Hash Deep: 320 objects 32 times,2.600000,0.230000,2.840000,6.228119,0,No Transaction
+activerecord-postgresql,Level 5,Model Object Select Hash Deep: 320 objects 32 times,2.570000,0.230000,2.800000,6.160995,0,Transaction
+activerecord-postgresql,Level 5,Model Object Update Hash Deep: 320 objects 32 times,2.620000,0.270000,2.890000,6.687125,0,No Transaction
+activerecord-postgresql,Level 5,Model Object Update Hash Deep: 320 objects 32 times,2.220000,0.220000,2.450000,3.875162,0,Transaction
+activerecord-postgresql,Level 5,Model Object Update Hash Full: 320 objects 32 times,8.630000,0.670000,9.310000,10.342928,180,No Transaction
+activerecord-postgresql,Level 5,Model Object Update Hash Full: 320 objects 32 times,8.020000,0.240000,8.260000,8.964495,28,Transaction
+activerecord-postgresql,Level 5,Model Object Select and Save: 1600 objects,1.270000,0.130000,1.410000,2.136839,8020,No Transaction
+activerecord-postgresql,Level 5,Model Object Select and Save: 1600 objects,1.070000,0.060000,1.130000,1.366843,84,Transaction
+activerecord-postgresql,Level 5,Model Object Destruction: 3200 objects,1.220000,0.200000,1.430000,2.653206,0,No Transaction
+activerecord-postgresql,Level 5,Model Object Destruction: 3200 objects,0.860000,0.080000,0.940000,1.207013,1192,Transaction
+activerecord-postgresql,Level 5,Model Object And Associated Object Creation: 640 objects,0.920000,0.100000,1.030000,1.536172,40,No Transaction
+activerecord-postgresql,Level 5,Model Object And Associated Object Creation: 640 objects,0.790000,0.050000,0.840000,1.007788,0,Transaction
+activerecord-postgresql,Level 5,Model Object and Associated Object Destruction: 800 objects,1.480000,0.140000,1.620000,2.647694,52,No Transaction
+activerecord-postgresql,Level 5,Model Object and Associated Object Destruction: 800 objects,1.240000,0.070000,1.330000,1.610015,0,Transaction
+activerecord-postgresql,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,6.120000,0.060000,6.180000,6.284935,3560,No Transaction
+activerecord-postgresql,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,6.320000,0.070000,6.390000,6.493957,312,Transaction
+activerecord-postgresql,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,6.170000,0.070000,6.250000,6.288630,88,No Transaction
+activerecord-postgresql,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,6.090000,0.060000,6.160000,6.207720,1032,Transaction
+activerecord-postgresql,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,1.050000,0.020000,1.070000,1.114392,80,No Transaction
+activerecord-postgresql,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,1.090000,0.020000,1.120000,1.150046,20,Transaction
+activerecord-postgresql,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,1.400000,0.030000,1.430000,1.503989,120,No Transaction
+activerecord-postgresql,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,1.430000,0.040000,1.480000,1.536316,1036,Transaction
+activerecord-postgresql,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.840000,0.030000,0.880000,0.894651,0,No Transaction
+activerecord-postgresql,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.820000,0.030000,0.850000,0.867175,4,Transaction
+activerecord-postgresql,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.550000,0.050000,0.600000,0.946798,23064,No Transaction
+activerecord-postgresql,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.540000,0.040000,0.590000,0.930522,12892,Transaction
+activerecord-postgresql,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.540000,0.030000,0.580000,0.694406,956,No Transaction
+activerecord-postgresql,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.570000,0.030000,0.600000,0.734829,0,Transaction
+activerecord-postgresql,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.920000,0.030000,0.960000,1.096866,0,No Transaction
+activerecord-postgresql,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.850000,0.030000,0.880000,1.016827,0,Transaction
+activerecord-postgresql,Level 5,Light Threading with 6 threads,0.420000,0.060000,0.490000,0.744978,20,No Transaction
+activerecord-postgresql,Level 5,Heavy Threading with 32 threads,2.220000,0.230000,2.450000,3.869678,0,No Transaction
+activerecord-sqlite,Level 5,Model Object Creation: 1600 objects,1.210000,0.610000,1.820000,2.671872,6600,No Transaction
+activerecord-sqlite,Level 5,Model Object Creation: 1600 objects,0.740000,0.020000,0.760000,0.757487,1784,Transaction
+activerecord-sqlite,Level 5,Model Object Select: 3200 objects 32 times,1.470000,0.020000,1.490000,1.502328,4976,No Transaction
+activerecord-sqlite,Level 5,Model Object Select: 3200 objects 32 times,1.330000,0.020000,1.360000,1.348847,668,Transaction
+activerecord-sqlite,Level 5,Model Object Select PK: 320 objects 32 times,1.250000,0.120000,1.380000,1.381400,0,No Transaction
+activerecord-sqlite,Level 5,Model Object Select PK: 320 objects 32 times,1.150000,0.020000,1.170000,1.169328,0,Transaction
+activerecord-sqlite,Level 5,Model Object Select Hash: 320 objects 32 times,1.230000,0.120000,1.360000,1.357554,8,No Transaction
+activerecord-sqlite,Level 5,Model Object Select Hash: 320 objects 32 times,1.210000,0.020000,1.230000,1.230184,116,Transaction
+activerecord-sqlite,Level 5,Model Object Select Hash Deep: 320 objects 32 times,2.750000,0.150000,2.900000,2.908135,16,No Transaction
+activerecord-sqlite,Level 5,Model Object Select Hash Deep: 320 objects 32 times,2.800000,0.030000,2.850000,2.874458,52,Transaction
+activerecord-sqlite,Level 5,Model Object Update Hash Deep: 320 objects 32 times,3.580000,3.830000,7.410000,12.849716,0,No Transaction
+activerecord-sqlite,Level 5,Model Object Update Hash Deep: 320 objects 32 times,2.510000,0.020000,2.530000,2.546304,0,Transaction
+activerecord-sqlite,Level 5,Model Object Update Hash Full: 320 objects 32 times,8.060000,0.300000,8.370000,8.519000,752,No Transaction
+activerecord-sqlite,Level 5,Model Object Update Hash Full: 320 objects 32 times,6.800000,0.030000,6.840000,6.848342,84,Transaction
+activerecord-sqlite,Level 5,Model Object Select and Save: 1600 objects,1.490000,0.660000,2.150000,3.177714,5312,No Transaction
+activerecord-sqlite,Level 5,Model Object Select and Save: 1600 objects,0.970000,0.020000,1.000000,1.000696,1640,Transaction
+activerecord-sqlite,Level 5,Model Object Destruction: 3200 objects,1.710000,1.200000,2.910000,4.558309,4,No Transaction
+activerecord-sqlite,Level 5,Model Object Destruction: 3200 objects,0.920000,0.020000,0.950000,1.542928,0,Transaction
+activerecord-sqlite,Level 5,Model Object And Associated Object Creation: 640 objects,1.120000,0.550000,1.680000,2.470301,0,No Transaction
+activerecord-sqlite,Level 5,Model Object And Associated Object Creation: 640 objects,0.660000,0.020000,0.680000,0.681037,0,Transaction
+activerecord-sqlite,Level 5,Model Object and Associated Object Destruction: 800 objects,1.580000,0.660000,2.240000,3.183668,0,No Transaction
+activerecord-sqlite,Level 5,Model Object and Associated Object Destruction: 800 objects,1.080000,0.020000,1.120000,1.175926,1024,Transaction
+activerecord-sqlite,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,5.800000,0.060000,5.860000,5.860397,2768,No Transaction
+activerecord-sqlite,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,5.690000,0.050000,5.740000,5.738628,388,Transaction
+activerecord-sqlite,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,5.760000,0.050000,5.810000,5.828340,2048,No Transaction
+activerecord-sqlite,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,5.790000,0.050000,5.850000,5.849614,152,Transaction
+activerecord-sqlite,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,1.010000,0.020000,1.040000,1.037673,304,No Transaction
+activerecord-sqlite,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,0.990000,0.020000,1.020000,1.015849,20,Transaction
+activerecord-sqlite,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,1.330000,0.030000,1.360000,1.355549,2052,No Transaction
+activerecord-sqlite,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,1.350000,0.020000,1.380000,1.381781,0,Transaction
+activerecord-sqlite,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.790000,0.020000,0.820000,0.810860,0,No Transaction
+activerecord-sqlite,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.760000,0.020000,0.780000,0.787067,0,Transaction
+activerecord-sqlite,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.610000,0.030000,0.640000,0.651524,21200,No Transaction
+activerecord-sqlite,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.600000,0.030000,0.650000,0.639043,11688,Transaction
+activerecord-sqlite,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.470000,0.020000,0.490000,0.493390,36,No Transaction
+activerecord-sqlite,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.460000,0.020000,0.480000,0.480194,0,Transaction
+activerecord-sqlite,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.810000,0.020000,0.840000,0.838761,0,No Transaction
+activerecord-sqlite,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.810000,0.020000,0.840000,0.838474,0,Transaction
+activerecord-sqlite,Level 5,Light Threading with 6 threads,0.510000,0.250000,0.760000,1.153727,52,No Transaction
+activerecord-sqlite,Level 5,Heavy Threading with 32 threads,2.650000,1.250000,3.910000,5.965839,44,No Transaction
+mongoid-mongodb,Level 5,Model Object Creation: 1600 objects,1.090000,0.060000,1.150000,1.767134,5356,No Transaction
+mongoid-mongodb,Level 5,Model Object Select: 3200 objects 32 times,0.030000,0.000000,0.030000,0.034250,0,No Transaction
+mongoid-mongodb,Level 5,Model Object Select PK: 320 objects 32 times,6.320000,0.290000,6.610000,7.933735,5340,No Transaction
+mongoid-mongodb,Level 5,Model Object Select Hash: 320 objects 32 times,5.650000,0.280000,5.940000,7.186774,592,No Transaction
+mongoid-mongodb,Level 5,Model Object Select Hash Deep: 320 objects 32 times,14.000000,0.350000,14.360000,16.522907,1468,No Transaction
+mongoid-mongodb,Level 5,Model Object Update Hash Deep: 320 objects 32 times,3.340000,0.250000,3.590000,4.496290,720,No Transaction
+mongoid-mongodb,Level 5,Model Object Update Hash Full: 320 objects 32 times,3.460000,0.240000,3.710000,4.624574,40,No Transaction
+mongoid-mongodb,Level 5,Model Object Select and Save: 1600 objects,1.210000,0.050000,1.260000,1.540216,124,No Transaction
+mongoid-mongodb,Level 5,Model Object Destruction: 3200 objects,0.940000,0.080000,1.030000,1.309976,520,No Transaction
+mongoid-mongodb,Level 5,Model Object And Associated Object Creation: 640 objects,1.030000,0.040000,1.080000,1.704386,24,No Transaction
+mongoid-mongodb,Level 5,Model Object and Associated Object Destruction: 800 objects,1.060000,0.080000,1.140000,1.543462,16,No Transaction
+mongoid-mongodb,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,1.240000,0.020000,1.260000,1.314835,8,No Transaction
+mongoid-mongodb,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,1.260000,0.010000,1.290000,1.340096,0,No Transaction
+mongoid-mongodb,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,0.850000,0.010000,0.860000,0.908334,168,No Transaction
+mongoid-mongodb,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,0.820000,0.020000,0.840000,0.872595,0,No Transaction
+mongoid-mongodb,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.060000,0.010000,0.080000,0.082494,0,No Transaction
+mongoid-mongodb,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.030000,0.010000,0.050000,0.048371,0,No Transaction
+mongoid-mongodb,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.420000,0.030000,0.460000,0.694354,0,No Transaction
+mongoid-mongodb,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.830000,0.030000,0.860000,1.187451,20,No Transaction
+mongoid-mongodb,Level 5,Light Threading with 6 threads,0.480000,0.040000,0.520000,1.179487,20,No Transaction
+mongoid-mongodb,Level 5,Heavy Threading with 32 threads,2.400000,0.120000,2.540000,3.650763,0,No Transaction
+sequel-mysql,Level 5,Model Object Creation: 1600 objects,0.640000,0.160000,0.800000,1.733902,10164,No Transaction
+sequel-mysql,Level 5,Model Object Creation: 1600 objects,0.410000,0.100000,0.510000,0.778894,2488,Transaction
+sequel-mysql,Level 5,Model Object Select: 3200 objects 32 times,0.260000,0.040000,0.310000,0.473266,3696,No Transaction
+sequel-mysql,Level 5,Model Object Select: 3200 objects 32 times,0.250000,0.050000,0.300000,0.465895,696,Transaction
+sequel-mysql,Level 5,Model Object Select PK: 320 objects 32 times,1.220000,0.310000,1.540000,2.510121,2048,No Transaction
+sequel-mysql,Level 5,Model Object Select PK: 320 objects 32 times,1.200000,0.320000,1.530000,2.533939,0,Transaction
+sequel-mysql,Level 5,Model Object Select Hash: 320 objects 32 times,1.040000,0.200000,1.240000,1.909931,37144,No Transaction
+sequel-mysql,Level 5,Model Object Select Hash: 320 objects 32 times,1.020000,0.200000,1.220000,1.871180,8780,Transaction
+sequel-mysql,Level 5,Model Object Select Hash Deep: 320 objects 32 times,1.280000,0.200000,1.500000,2.311686,152,No Transaction
+sequel-mysql,Level 5,Model Object Select Hash Deep: 320 objects 32 times,1.240000,0.200000,1.440000,2.254475,4,Transaction
+sequel-mysql,Level 5,Model Object Update Hash Deep: 320 objects 32 times,0.940000,0.180000,1.120000,2.050303,0,No Transaction
+sequel-mysql,Level 5,Model Object Update Hash Deep: 320 objects 32 times,0.880000,0.170000,1.060000,1.868345,0,Transaction
+sequel-mysql,Level 5,Model Object Update Hash Full: 320 objects 32 times,1.440000,0.210000,1.660000,4.650567,12,No Transaction
+sequel-mysql,Level 5,Model Object Update Hash Full: 320 objects 32 times,1.080000,0.170000,1.250000,1.984650,0,Transaction
+sequel-mysql,Level 5,Model Object Select and Save: 1600 objects,0.430000,0.110000,0.550000,1.206552,292,No Transaction
+sequel-mysql,Level 5,Model Object Select and Save: 1600 objects,0.220000,0.050000,0.270000,0.461053,0,Transaction
+sequel-mysql,Level 5,Model Object Destruction: 3200 objects,0.670000,0.210000,0.890000,1.952090,0,No Transaction
+sequel-mysql,Level 5,Model Object Destruction: 3200 objects,0.310000,0.090000,0.410000,0.711172,0,Transaction
+sequel-mysql,Level 5,Model Object And Associated Object Creation: 640 objects,0.560000,0.130000,0.690000,1.337023,0,No Transaction
+sequel-mysql,Level 5,Model Object And Associated Object Creation: 640 objects,0.420000,0.090000,0.510000,0.770778,0,Transaction
+sequel-mysql,Level 5,Model Object and Associated Object Destruction: 800 objects,0.470000,0.130000,0.610000,1.270090,0,No Transaction
+sequel-mysql,Level 5,Model Object and Associated Object Destruction: 800 objects,0.270000,0.070000,0.350000,0.578863,0,Transaction
+sequel-mysql,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,0.190000,0.020000,0.210000,0.254055,4,No Transaction
+sequel-mysql,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,0.180000,0.020000,0.210000,0.253842,0,Transaction
+sequel-mysql,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,0.260000,0.010000,0.280000,0.322010,0,No Transaction
+sequel-mysql,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,0.260000,0.020000,0.280000,0.323998,192,Transaction
+sequel-mysql,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,0.140000,0.020000,0.170000,0.190097,0,No Transaction
+sequel-mysql,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,0.140000,0.020000,0.160000,0.191712,0,Transaction
+sequel-mysql,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,0.250000,0.020000,0.270000,0.323903,0,No Transaction
+sequel-mysql,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,0.250000,0.020000,0.290000,0.323602,0,Transaction
+sequel-mysql,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.120000,0.010000,0.130000,0.168703,0,No Transaction
+sequel-mysql,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.120000,0.020000,0.140000,0.168840,0,Transaction
+sequel-mysql,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.410000,0.040000,0.470000,0.495893,19348,No Transaction
+sequel-mysql,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.420000,0.030000,0.450000,0.514716,7284,Transaction
+sequel-mysql,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.100000,0.030000,0.140000,0.185087,0,No Transaction
+sequel-mysql,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.100000,0.020000,0.120000,0.182343,0,Transaction
+sequel-mysql,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.200000,0.030000,0.240000,0.299161,0,No Transaction
+sequel-mysql,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.190000,0.030000,0.230000,0.298749,0,Transaction
+sequel-mysql,Level 5,Light Threading with 6 threads,0.200000,0.060000,0.260000,0.463763,8,No Transaction
+sequel-mysql,Level 5,Heavy Threading with 32 threads,1.040000,0.270000,1.310000,2.727126,0,No Transaction
+sequel-postgresql,Level 5,Model Object Creation: 1600 objects,0.330000,0.090000,0.420000,0.859338,4340,No Transaction
+sequel-postgresql,Level 5,Model Object Creation: 1600 objects,0.210000,0.030000,0.240000,0.326151,2288,Transaction
+sequel-postgresql,Level 5,Model Object Select: 3200 objects 32 times,1.210000,0.040000,1.250000,1.330872,15436,No Transaction
+sequel-postgresql,Level 5,Model Object Select: 3200 objects 32 times,1.220000,0.040000,1.270000,1.339790,420,Transaction
+sequel-postgresql,Level 5,Model Object Select PK: 320 objects 32 times,0.870000,0.160000,1.040000,1.444023,0,No Transaction
+sequel-postgresql,Level 5,Model Object Select PK: 320 objects 32 times,0.860000,0.170000,1.030000,1.432481,52,Transaction
+sequel-postgresql,Level 5,Model Object Select Hash: 320 objects 32 times,0.810000,0.190000,1.010000,1.815565,0,No Transaction
+sequel-postgresql,Level 5,Model Object Select Hash: 320 objects 32 times,0.760000,0.190000,0.950000,1.687825,0,Transaction
+sequel-postgresql,Level 5,Model Object Select Hash Deep: 320 objects 32 times,1.070000,0.190000,1.270000,2.400492,0,No Transaction
+sequel-postgresql,Level 5,Model Object Select Hash Deep: 320 objects 32 times,1.010000,0.200000,1.220000,2.336168,0,Transaction
+sequel-postgresql,Level 5,Model Object Update Hash Deep: 320 objects 32 times,0.980000,0.220000,1.200000,4.685564,0,No Transaction
+sequel-postgresql,Level 5,Model Object Update Hash Deep: 320 objects 32 times,0.760000,0.180000,0.940000,2.010605,0,Transaction
+sequel-postgresql,Level 5,Model Object Update Hash Full: 320 objects 32 times,1.250000,0.220000,1.490000,4.758699,0,No Transaction
+sequel-postgresql,Level 5,Model Object Update Hash Full: 320 objects 32 times,1.030000,0.200000,1.230000,2.264453,0,Transaction
+sequel-postgresql,Level 5,Model Object Select and Save: 1600 objects,0.320000,0.090000,0.410000,0.859722,0,No Transaction
+sequel-postgresql,Level 5,Model Object Select and Save: 1600 objects,0.220000,0.040000,0.270000,1.200633,0,Transaction
+sequel-postgresql,Level 5,Model Object Destruction: 3200 objects,0.480000,0.160000,0.650000,1.781639,0,No Transaction
+sequel-postgresql,Level 5,Model Object Destruction: 3200 objects,0.270000,0.060000,0.330000,0.597777,4,Transaction
+sequel-postgresql,Level 5,Model Object And Associated Object Creation: 640 objects,0.340000,0.070000,0.420000,0.887568,0,No Transaction
+sequel-postgresql,Level 5,Model Object And Associated Object Creation: 640 objects,0.220000,0.030000,0.250000,0.331953,0,Transaction
+sequel-postgresql,Level 5,Model Object and Associated Object Destruction: 800 objects,0.360000,0.110000,0.480000,1.313615,0,No Transaction
+sequel-postgresql,Level 5,Model Object and Associated Object Destruction: 800 objects,0.220000,0.050000,0.280000,0.575919,0,Transaction
+sequel-postgresql,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,0.200000,0.010000,0.210000,0.283381,4,No Transaction
+sequel-postgresql,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,0.190000,0.020000,0.210000,0.282353,0,Transaction
+sequel-postgresql,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,0.280000,0.020000,0.310000,0.337945,1048,No Transaction
+sequel-postgresql,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,0.280000,0.010000,0.300000,0.337548,0,Transaction
+sequel-postgresql,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,0.160000,0.010000,0.170000,0.206294,16,No Transaction
+sequel-postgresql,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,0.180000,0.020000,0.210000,0.212131,0,Transaction
+sequel-postgresql,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,0.300000,0.010000,0.310000,0.381155,0,No Transaction
+sequel-postgresql,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,0.310000,0.020000,0.340000,0.381177,0,Transaction
+sequel-postgresql,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.140000,0.010000,0.160000,0.170906,0,No Transaction
+sequel-postgresql,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.140000,0.010000,0.150000,0.171462,0,Transaction
+sequel-postgresql,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.530000,0.030000,0.570000,0.628606,30240,No Transaction
+sequel-postgresql,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.520000,0.030000,0.560000,0.621596,9624,Transaction
+sequel-postgresql,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.090000,0.020000,0.110000,0.230918,272,No Transaction
+sequel-postgresql,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.090000,0.010000,0.100000,0.245873,0,Transaction
+sequel-postgresql,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.200000,0.020000,0.230000,0.391045,184,No Transaction
+sequel-postgresql,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.210000,0.030000,0.250000,0.408294,0,Transaction
+sequel-postgresql,Level 5,Light Threading with 6 threads,0.150000,0.040000,0.190000,0.485178,116,No Transaction
+sequel-postgresql,Level 5,Heavy Threading with 32 threads,0.730000,0.200000,0.930000,2.294078,300,No Transaction
+sequel-sqlite,Level 5,Model Object Creation: 1600 objects,0.680000,0.620000,1.300000,2.325733,5032,No Transaction
+sequel-sqlite,Level 5,Model Object Creation: 1600 objects,0.330000,0.010000,0.340000,0.341968,2352,Transaction
+sequel-sqlite,Level 5,Model Object Select: 3200 objects 32 times,0.730000,0.010000,0.740000,0.742555,228,No Transaction
+sequel-sqlite,Level 5,Model Object Select: 3200 objects 32 times,0.740000,0.010000,0.760000,0.753261,172,Transaction
+sequel-sqlite,Level 5,Model Object Select PK: 320 objects 32 times,0.800000,0.010000,0.820000,0.826297,576,No Transaction
+sequel-sqlite,Level 5,Model Object Select PK: 320 objects 32 times,0.730000,0.020000,0.760000,0.751127,180,Transaction
+sequel-sqlite,Level 5,Model Object Select Hash: 320 objects 32 times,0.870000,0.010000,0.880000,0.877862,272,No Transaction
+sequel-sqlite,Level 5,Model Object Select Hash: 320 objects 32 times,0.810000,0.010000,0.830000,0.819257,0,Transaction
+sequel-sqlite,Level 5,Model Object Select Hash Deep: 320 objects 32 times,1.160000,0.010000,1.180000,1.173397,12,No Transaction
+sequel-sqlite,Level 5,Model Object Select Hash Deep: 320 objects 32 times,1.080000,0.010000,1.090000,1.098046,0,Transaction
+sequel-sqlite,Level 5,Model Object Update Hash Deep: 320 objects 32 times,1.850000,3.630000,5.480000,10.123530,0,No Transaction
+sequel-sqlite,Level 5,Model Object Update Hash Deep: 320 objects 32 times,0.840000,0.010000,0.850000,0.860815,0,Transaction
+sequel-sqlite,Level 5,Model Object Update Hash Full: 320 objects 32 times,2.020000,3.660000,5.700000,10.546059,4,No Transaction
+sequel-sqlite,Level 5,Model Object Update Hash Full: 320 objects 32 times,0.980000,0.010000,0.990000,0.998227,0,Transaction
+sequel-sqlite,Level 5,Model Object Select and Save: 1600 objects,0.480000,0.570000,1.050000,1.871907,0,No Transaction
+sequel-sqlite,Level 5,Model Object Select and Save: 1600 objects,0.190000,0.010000,0.210000,0.205999,248,Transaction
+sequel-sqlite,Level 5,Model Object Destruction: 3200 objects,0.790000,1.170000,1.970000,3.564236,0,No Transaction
+sequel-sqlite,Level 5,Model Object Destruction: 3200 objects,0.250000,0.010000,0.260000,0.272757,208,Transaction
+sequel-sqlite,Level 5,Model Object And Associated Object Creation: 640 objects,0.620000,0.490000,1.120000,1.906659,0,No Transaction
+sequel-sqlite,Level 5,Model Object And Associated Object Creation: 640 objects,0.310000,0.010000,0.320000,0.327160,0,Transaction
+sequel-sqlite,Level 5,Model Object and Associated Object Destruction: 800 objects,0.610000,0.590000,1.210000,2.101499,0,No Transaction
+sequel-sqlite,Level 5,Model Object and Associated Object Destruction: 800 objects,0.280000,0.010000,0.300000,0.297936,0,Transaction
+sequel-sqlite,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,0.350000,0.010000,0.360000,0.356529,576,No Transaction
+sequel-sqlite,Level 5,Eager Loading Query Per Association With 1-1 Records: 640 objects 22 times,0.360000,0.010000,0.370000,0.376487,80,Transaction
+sequel-sqlite,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,0.340000,0.020000,0.380000,0.367021,2360,No Transaction
+sequel-sqlite,Level 5,Eager Loading Single Query With 1-1 Records: 640 objects 22 times,0.340000,0.010000,0.350000,0.350227,0,Transaction
+sequel-sqlite,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,0.260000,0.010000,0.270000,0.273892,8,No Transaction
+sequel-sqlite,Level 5,Eager Loading Query Per Association With 1-32 Records: 1024 objects 22 times,0.260000,0.010000,0.280000,0.271282,8,Transaction
+sequel-sqlite,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,0.400000,0.010000,0.420000,0.419204,4,No Transaction
+sequel-sqlite,Level 5,Eager Loading Single Query With 1-32 Records: 1024 objects 22 times,0.400000,0.010000,0.410000,0.415349,0,Transaction
+sequel-sqlite,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.220000,0.010000,0.240000,0.239950,0,No Transaction
+sequel-sqlite,Level 5,Eager Loading Query Per Association With 1-32-32 Records: 2048 objects 9 times,0.230000,0.000000,0.230000,0.242453,16,Transaction
+sequel-sqlite,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.720000,0.030000,0.760000,0.752349,29632,No Transaction
+sequel-sqlite,Level 5,Eager Loading Single Query With 1-32-32 Records: 2048 objects 1 time,0.700000,0.030000,0.740000,0.730708,7096,Transaction
+sequel-sqlite,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.120000,0.000000,0.120000,0.136217,0,No Transaction
+sequel-sqlite,Level 5,Lazy Loading With 1-1 Records: 640 objects 1 time,0.120000,0.000000,0.120000,0.134039,0,Transaction
+sequel-sqlite,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.310000,0.020000,0.350000,0.324995,0,No Transaction
+sequel-sqlite,Level 5,Lazy Loading With 1-32 Records: 1024 objects 16 times,0.330000,0.010000,0.340000,0.350206,0,Transaction
+sequel-sqlite,Level 5,Light Threading with 6 threads,0.220000,0.210000,0.430000,0.730275,8,No Transaction
+sequel-sqlite,Level 5,Heavy Threading with 32 threads,1.150000,1.120000,2.280000,3.991929,20,No Transaction

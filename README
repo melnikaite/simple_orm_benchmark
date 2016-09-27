@@ -52,8 +52,8 @@ Reporting
 For easier comparison of different configurations, you can use the
 results_aggregator.rb script:
 
-  ruby simple_orm_benchmark.rb sequel-sqlite activerecord-sqlite > r.txt
-  ruby results_aggregator.rb r.txt
+  ruby ./simple_orm_benchmark.rb sequel-sqlite activerecord-sqlite > r.txt
+  ruby ./results_aggregator.rb r.txt > r.csv
 
 That will output CSV, with columns in the following order:
 
