@@ -250,7 +250,7 @@ end
 
 BENCHES.each do |b|
   Bench.new(false,b).bench
-  Bench.new(true,b).bench if ORM_CONFIG['transactional']
+  Bench.new(true,b).bench unless ORM_CONFIG['transactional'] === false
 end
 
 NO_TRANSACTION_BENCHES.each do |b|

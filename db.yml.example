@@ -3,47 +3,35 @@ sequel-postgresql:
   adapter: postgres
   database: simple_orm_benchmark
   user: postgres
-  transactional: true
-  debug: false
 sequel-mysql:
   orm: sequel
   adapter: mysql2
   host: localhost
   database: simple_orm_benchmark
   user: root
-  transactional: true
-  debug: false
 sequel-sqlite:
   orm: sequel
   adapter: sqlite
   database: sq_test.sqlite3
-  transactional: true
-  debug: false
   dylib: /usr/local/Cellar/sqlite/3.14.2/lib/libsqlitefunctions.dylib
 activerecord-postgresql:
   orm: active_record
   adapter: postgresql
   database: simple_orm_benchmark
   username: postgres
-  transactional: true
-  debug: false
 activerecord-mysql:
   orm: active_record
   adapter: mysql2
   host: localhost
   database: simple_orm_benchmark
   username: root
-  transactional: true
-  debug: false
 activerecord-sqlite:
   orm: active_record
   adapter: sqlite3
   database: ar_test.sqlite3
-  transactional: true
-  debug: false
   dylib: /usr/local/Cellar/sqlite/3.14.2/lib/libsqlitefunctions.dylib
 mongoid-mongodb:
   orm: mongoid
   database: simple_orm_benchmark
   transactional: false
-  debug: false
+  debug: true
