@@ -6,12 +6,6 @@ if ORM_CONFIG['debug']
   DB.loggers << Logger.new($stdout)
   DB.sql_log_level = :debug
 end
-# brew install --with-functions --with-json1 sqlite
-if ORM_CONFIG['adapter']=='sqlite3'
-  c = SQLite3::Database.new(ORM_CONFIG['database'])
-  c.enable_load_extension(1)
-  c.load_extension(ORM_CONFIG['dylib'])
-end
 
 DB.drop_table(:people) rescue nil
 DB.drop_table(:parties) rescue nil
