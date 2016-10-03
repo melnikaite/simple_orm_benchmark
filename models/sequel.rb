@@ -136,4 +136,22 @@ class Bench
   def self.drop_tables
     DB.drop_table(:people, :parties)
   end
+
+  # brew install --with-functions --with-json1 sqlite
+  def self.support_json?
+    if ORM_CONFIG['adapter']=='sqlite'
+      begin
+        if ORM_CONFIG['dylib']
+          c = SQLite3::Database.new(ORM_CONFIG['database'])
+          c.enable_load_extension(1)
+          c.load_extension(ORM_CONFIG['dylib'])
+        end
+        DB.execute('select json("{}")')[0][0] == '{}'
+      rescue
+        false
+      end
+    else
+      true
+    end
+  end
 end

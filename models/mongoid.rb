@@ -112,4 +112,8 @@ class Bench
   def self.drop_tables
     Mongoid::Clients.default.database.drop
   end
+
+  def self.support_json?
+    true
+  end
 end

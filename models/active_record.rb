@@ -5,11 +5,6 @@ if ORM_CONFIG['debug']
 end
 ActiveRecord::Base.establish_connection(ORM_CONFIG)
 c = ActiveRecord::Base.connection
-# brew install --with-functions --with-json1 sqlite
-if ORM_CONFIG['adapter']=='sqlite3'
-  c.raw_connection.enable_load_extension(1)
-  c.raw_connection.load_extension(ORM_CONFIG['dylib'])
-end
 c.drop_table(:people) rescue nil
 c.drop_table(:parties) rescue nil
 
@@ -136,5 +131,22 @@ class Bench
     c = ActiveRecord::Base.connection
     c.drop_table(:people)
     c.drop_table(:parties)
+  end
+
+  # brew install --with-functions --with-json1 sqlite
+  def self.support_json?
+    if ORM_CONFIG['adapter']=='sqlite3'
+      begin
+        if ORM_CONFIG['dylib']
+          c.raw_connection.enable_load_extension(1)
+          c.raw_connection.load_extension(ORM_CONFIG['dylib'])
+        end
+        c.execute('select json("{}")')[0][0] == '{}' rescue false
+      rescue
+        false
+      end
+    else
+      true
+    end
   end
 end
