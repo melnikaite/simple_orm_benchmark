@@ -137,21 +137,20 @@ class Bench
     DB.drop_table(:people, :parties)
   end
 
-  # brew install --with-functions --with-json1 sqlite
   def self.support_json?
-    if ORM_CONFIG['adapter']=='sqlite'
-      begin
-        if ORM_CONFIG['dylib']
-          c = SQLite3::Database.new(ORM_CONFIG['database'])
-          c.enable_load_extension(1)
-          c.load_extension(ORM_CONFIG['dylib'])
-        end
-        DB.execute('select json("{}")')[0][0] == '{}'
-      rescue
-        false
+    begin
+      case ORM_CONFIG['adapter']
+        when 'sqlite'
+          DB['select json("{}")'].to_a[0][:'json("{}")'] == '{}'
+        when 'mysql2'
+          DB["select JSON_OBJECT()"].to_a[0][:'JSON_OBJECT()'] == '{}'
+        when 'postgres'
+          DB["select json_object('{}')"].to_a[0][:json_object] == '{}'
+        else
+          false
       end
-    else
-      true
+    rescue
+      false
     end
   end
 end
