@@ -4,11 +4,11 @@ if ORM_CONFIG['debug']
   ActiveRecord::Base.logger.level = :debug
 end
 ActiveRecord::Base.establish_connection(ORM_CONFIG)
-c = ActiveRecord::Base.connection
-c.drop_table(:people) rescue nil
-c.drop_table(:parties) rescue nil
+DB = ActiveRecord::Base.connection
+DB.drop_table(:people) rescue nil
+DB.drop_table(:parties) rescue nil
 
-c.create_table(:parties) do |t|
+DB.create_table(:parties) do |t|
   t.string :theme
   if ORM_CONFIG['adapter']=='sqlite3'
     t.text :stuff
@@ -17,7 +17,7 @@ c.create_table(:parties) do |t|
   end
 end
 
-c.create_table(:people) do |t|
+DB.create_table(:people) do |t|
   t.integer :party_id
   t.integer :other_party_id
   t.string :name
@@ -95,12 +95,10 @@ class Bench
   end
 
   def insert_party(times)
-    c = ActiveRecord::Base.connection
     times.times{Party.create(:theme=>'Halloween', :stuff=>{pumpkin: 1, candy: 1})}
   end
 
   def insert_party_people(times, people_per_party)
-    c = ActiveRecord::Base.connection
     times.times do
       p = Party.create(:theme=>'Halloween')
       people_per_party.times{Person.create(:name=>"Party_#{p.id}", :party_id=>p.id)}
@@ -108,7 +106,6 @@ class Bench
   end
 
   def insert_party_both_people(times, people_per_party)
-    c = ActiveRecord::Base.connection
     times.times do
       p = Party.create(:theme=>'Halloween')
       people_per_party.times do
@@ -128,20 +125,19 @@ class Bench
   end
 
   def self.drop_tables
-    c = ActiveRecord::Base.connection
-    c.drop_table(:people)
-    c.drop_table(:parties)
+    DB.drop_table(:people)
+    DB.drop_table(:parties)
   end
 
   def self.support_json?
     begin
       case ORM_CONFIG['adapter']
         when 'sqlite3'
-          c.execute('select json("{}")').to_a[0][0] == '{}'
+          DB.execute('select json("{}")').to_a[0][0] == '{}'
         when 'mysql2'
-          c.execute("select JSON_OBJECT()").to_a[0][0] == '{}'
+          DB.execute("select JSON_OBJECT()").to_a[0][0] == '{}'
         when 'postgresql'
-          c.execute("select json_object('{}')").to_a[0]['json_object'] == '{}'
+          DB.execute("select json_object('{}')").to_a[0]['json_object'] == '{}'
         else
           false
       end

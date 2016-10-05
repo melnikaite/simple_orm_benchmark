@@ -139,13 +139,13 @@ class Bench
 
   def self.support_json?
     begin
-      case ORM_CONFIG['adapter']
-        when 'sqlite'
-          DB['select json("{}")'].to_a[0][:'json("{}")'] == '{}'
-        when 'mysql2'
-          DB["select JSON_OBJECT()"].to_a[0][:'JSON_OBJECT()'] == '{}'
-        when 'postgres'
-          DB["select json_object('{}')"].to_a[0][:json_object] == '{}'
+      case DB.database_type
+        when :sqlite
+          DB.get{json('{}')} == '{}'
+        when :mysql
+          DB.get{json_object{}} == '{}'
+        when :postgres
+          DB.get{json_object('{}')} == '{}'
         else
           false
       end

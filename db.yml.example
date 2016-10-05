@@ -13,7 +13,6 @@ sequel-sqlite:
   orm: sequel
   adapter: amalgalite
   database: sq_test.sqlite3
-  dylib: /usr/local/Cellar/sqlite/3.14.2/lib/libsqlitefunctions.dylib
 activerecord-postgresql:
   orm: active_record
   adapter: postgresql
