@@ -167,15 +167,15 @@ proc{@num_threads=@n; instance_eval(&thread_block)}],
 
 JSON_BENCHES = [
   [proc{"Model Object Select Hash Deep: #{10*@n} objects #{@n} times"},
-   proc{insert_party(10*@n); @party_ids=all_parties.map{|p| p.id}},
+   proc{insert_party_deep(10*@n); @party_ids=all_parties.map{|p| p.id}},
    proc{@n.times{@party_ids.each{|i| get_party_hash_deep}}}],
 
   [proc{"Model Object Update Hash Deep: #{10*@n} objects #{@n} times"},
-   proc{insert_party(10*@n); @party_ids=all_parties.map{|p| p.id}},
+   proc{insert_party_deep(10*@n); @party_ids=all_parties.map{|p| p.id}},
    proc{@n.times{@party_ids.each{|i| update_party_hash_deep(i)}}}],
 
   [proc{"Model Object Update Hash Full: #{10*@n} objects #{@n} times"},
-   proc{insert_party(10*@n); @party_ids=all_parties.map{|p| p.id}},
+   proc{insert_party_deep(10*@n); @party_ids=all_parties.map{|p| p.id}},
    proc{@n.times{@party_ids.each{|i| update_party_hash_full(i)}}}],
 ]
 

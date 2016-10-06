@@ -14,6 +14,10 @@ DB.extension :pg_json if ORM_CONFIG['adapter']=='postgres'
 DB.create_table(:parties, :engine=>:InnoDB) do
   primary_key :id
   String :theme
+end
+
+DB.create_table(:json_parties, :engine=>:InnoDB) do
+  primary_key :id
   if ORM_CONFIG['adapter']=='postgres'
     Jsonb :stuff
   else
@@ -31,9 +35,13 @@ end
 
 class Party < Sequel::Model
   plugin :prepared_statements
-  plugin :serialization, :json, :stuff unless ORM_CONFIG['adapter']=='postgres'
   one_to_many :people 
   one_to_many :other_people, :class=>:Person, :key=>:other_party_id
+end
+
+class JsonParty < Sequel::Model
+  plugin :prepared_statements
+  plugin :serialization, :json, :stuff unless ORM_CONFIG['adapter']=='postgres'
 end
 
 class Person < Sequel::Model  
@@ -58,6 +66,10 @@ class Bench
 
   def get_party_hash(id)
     Party.find(:id=>id)
+  end
+
+  def insert_party_deep(times)
+    times.times{JsonParty.create(:stuff=>{pumpkin: 1, candy: 1})}
   end
 
   def get_party_hash_deep
@@ -105,7 +117,7 @@ class Bench
   end
 
   def insert_party(times)
-    times.times{Party.create(:theme=>'Halloween', :stuff=>{pumpkin: 1, candy: 1})}
+    times.times{Party.create(:theme=>'Halloween')}
   end
 
   def insert_party_people(times, people_per_party)

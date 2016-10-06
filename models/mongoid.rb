@@ -14,10 +14,14 @@ Mongoid::Clients.default.database.drop
 class Party
   include Mongoid::Document
   field :theme, type: String
-  field :stuff, type: Hash
 
   has_many :people, :foreign_key=>'party_id'
   has_many :other_people, :class_name=>'Person', :foreign_key=>'other_party_id'
+end
+
+class JsonParty
+  include Mongoid::Document
+  field :stuff, type: Hash
 end
 
 class Person
@@ -48,16 +52,20 @@ class Bench
     Party.find_by(:id=>id)
   end
 
+  def insert_party_deep(times)
+    times.times{JsonParty.create(:stuff=>{pumpkin: 1, candy: 1})}
+  end
+
   def get_party_hash_deep
-    Party.find_by('stuff.pumpkin'=>1)
+    JsonParty.find_by('stuff.pumpkin'=>1)
   end
 
   def update_party_hash_deep(id)
-    Party.where(id: id).set(:stuff=>{:pumpkin=>2})
+    JsonParty.where(id: id).set(:stuff=>{:pumpkin=>2})
   end
 
   def update_party_hash_full(id)
-    Party.where(id: id).update(:stuff=>{:pumpkin=>2, :candy=>1})
+    JsonParty.where(id: id).update(:stuff=>{:pumpkin=>2, :candy=>1})
   end
 
   def eager_graph_party_both_people
@@ -81,7 +89,7 @@ class Bench
   end
 
   def insert_party(times)
-    times.times{Party.create(:theme=>'Halloween', :stuff=>{pumpkin: 1, candy: 1})}
+    times.times{Party.create(:theme=>'Halloween')}
   end
 
   def insert_party_people(times, people_per_party)

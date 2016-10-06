@@ -10,6 +10,9 @@ DB.drop_table(:parties) rescue nil
 
 DB.create_table(:parties) do |t|
   t.string :theme
+end
+
+DB.create_table(:json_parties) do |t|
   if ORM_CONFIG['adapter']=='sqlite3'
     t.text :stuff
   else
@@ -25,9 +28,12 @@ DB.create_table(:people) do |t|
 end
 
 class Party < ActiveRecord::Base
-  serialize :stuff, JSON if ORM_CONFIG['adapter']=='sqlite3'
   has_many :people
   has_many :other_people, :class_name=>'Person', :foreign_key=>'other_party_id'
+end
+
+class JsonParty < ActiveRecord::Base
+  serialize :stuff, JSON if ORM_CONFIG['adapter']=='sqlite3'
 end
 
 class Person < ActiveRecord::Base  
@@ -54,24 +60,28 @@ class Bench
     Party.find_by(:id=>id)
   end
 
+  def insert_party_deep(times)
+    times.times{JsonParty.create(:stuff=>{pumpkin: 1, candy: 1})}
+  end
+
   def get_party_hash_deep
     if ORM_CONFIG['adapter']=='sqlite3'
-      Party.find_by("json_extract(stuff, '$.pumpkin') = ?", 1)
+      JsonParty.find_by("json_extract(stuff, '$.pumpkin') = ?", 1)
     else
-      Party.find_by("stuff->>'$.pumpkin' = ?", '1')
+      JsonParty.find_by("stuff->>'$.pumpkin' = ?", '1')
     end
   end
 
   def update_party_hash_deep(id)
     if ORM_CONFIG['adapter']=='postgresql'
-      Party.where(id: id).update_all(["stuff = jsonb_set(stuff::jsonb, '{pumpkin}', ?)", '2'])
+      JsonParty.where(id: id).update_all(["stuff = jsonb_set(stuff::jsonb, '{pumpkin}', ?)", '2'])
     else
-      Party.where(id: id).update_all(["stuff = JSON_SET(stuff, '$.pumpkin', ?)", '2'])
+      JsonParty.where(id: id).update_all(["stuff = JSON_SET(stuff, '$.pumpkin', ?)", '2'])
     end
   end
 
   def update_party_hash_full(id)
-    Party.where(id: id).update(:stuff=>{:pumpkin=>2, :candy=>1})
+    JsonParty.where(id: id).update(:stuff=>{:pumpkin=>2, :candy=>1})
   end
 
   def eager_graph_party_both_people
@@ -95,7 +105,7 @@ class Bench
   end
 
   def insert_party(times)
-    times.times{Party.create(:theme=>'Halloween', :stuff=>{pumpkin: 1, candy: 1})}
+    times.times{Party.create(:theme=>'Halloween')}
   end
 
   def insert_party_people(times, people_per_party)
